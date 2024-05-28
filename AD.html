@@ -3,8 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <META http-equiv="Refresh" content="180;URL=jump.html">
+    <META http-equiv="Refresh" content="120;URL=https://hcratch3.github.io/Wiki">
     <title>背景にYouTube動画</title>
+    <script>
+      // 履歴にスタックしたかどうかのflag
+var isHistoryPush = false;
+(function() {
+    if (history && history.pushState && history.state !== undefined) {
+        // history イベントの監視
+        window.addEventListener('popstate', function (e) {
+            if (isHistoryPush) {
+                alert('ブラウザでの戻るボタンは禁止されております。');
+                history.pushState(null, null, null);
+            }
+        }, false);
+    }
+})();
+
+// pushしたいタイミングで呼び出します
+function pushHistory() {
+    if (history && history.pushState && history.state !== undefined) {
+        isHistoryPush = true;
+        history.pushState(null, null, null);
+    }
+}
+
+    </script>
     <style>
         body, html {
             margin: 0;
@@ -47,12 +71,6 @@
       } else {
         alert("キャンセルが押されました");
       }
-      window.addEventListener("popstate", function (e) {
-
-        history.pushState(null, null, null);
-        return;
-
-      });
     </script>
 </body>
 </html>
