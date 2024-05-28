@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META http-equiv="Refresh" content="180;URL=jump.html">
     <title>背景にYouTube動画</title>
     <style>
         body, html {
@@ -37,5 +38,21 @@
         <h1>背景にYouTube動画</h1>
         <p>ここにコンテンツを追加します。</p>
     </div>
+    <script>
+      // 確認ダイアログを表示し、結果を変数resultに格納する
+      var result = confirm("約二分後スキップされます。");
+
+      if (result) {
+        alert("OKが押されました");
+      } else {
+        alert("キャンセルが押されました");
+      }
+      window.addEventListener("popstate", function (e) {
+
+        history.pushState(null, null, null);
+        return;
+
+      });
+    </script>
 </body>
 </html>
