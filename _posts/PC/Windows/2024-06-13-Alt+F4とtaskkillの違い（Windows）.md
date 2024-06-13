@@ -5,7 +5,7 @@ categories: [コンピュータ, Windows]
 tags: [Alt+F4, taskkill, ショートカット, コマンドライン]
 render_with_liquid: false
 ---
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2021.svg/1024px-Windows_logo_-_2021.svg.png" alt="Windows" title="Windows"><br>
+<img src="https://tanweb.net/wordpress/wp-content/uploads/2016/11/ec-about-windows2021-01.jpg" alt="Windows" title="Windows"><br>
 Windowsには、アプリケーションを終了させるためのさまざまな方法があります。代表的なものとして、キーボードショートカットの**Alt+F4**とコマンドラインツールの**taskkill**があります。これら二つの方法には、それぞれ異なる特徴と用途があります。
 
 ## Alt+F4の役割
